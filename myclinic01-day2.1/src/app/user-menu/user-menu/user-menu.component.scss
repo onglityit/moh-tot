@@ -1,0 +1,67 @@
+.usermenu {
+    width: 60px;
+    margin: 0 30px 0 auto;
+    position: relative;
+    font-size: 2rem;
+}
+.user-dropdown {
+    z-index: 10;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .16);
+    position: absolute;
+    top: 120%;
+    right: 0;
+    visibility: hidden;
+    width: 320px;
+    opacity: 0;
+    transition: all 0.1s linear;
+}
+.usermenu:hover .user-dropdown {
+    visibility: visible;
+    opacity: 1;
+}
+
+//for translate
+.toggle {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    background-color: #7B9CB1;
+    border-radius: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .toggle input {
+    display: none;
+  }
+  .switch {
+    position: absolute;
+    background: white;
+    top: 5px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 50%;
+    transition: left 0.3s ease-in-out;
+    z-index: 20;
+  }
+  .toggle .label-en, .toggle .label-bm {
+    position: absolute;
+    top: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  .label-en {
+    right: 20px;
+  }
+  .label-bm {
+    left: 20px;
+  }
+  .toggle input:checked+.switch {
+    left: 43px;
+  }
+  

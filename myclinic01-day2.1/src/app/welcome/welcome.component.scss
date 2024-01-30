@@ -1,0 +1,30 @@
+
+.top-bar {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.img-center{
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+.please-wait{
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 20px;
+    
+}
+.loading{
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 18px;
+}

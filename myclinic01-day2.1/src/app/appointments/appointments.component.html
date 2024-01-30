@@ -1,0 +1,10 @@
+<div class="flex-container">
+    <app-sidebar class="container-sidebar" [ngClass]="hideSidebar ? 'collapsed' : ''" [hideSidebar]="hideSidebar"
+            (toggleSideBar)="toggleSideBar($event)"></app-sidebar>
+    <section class="maincolumn">
+        <div class="top-right">
+            <app-user-menu></app-user-menu>
+        </div>
+        <router-outlet></router-outlet>
+    </section>
+</div>

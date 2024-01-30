@@ -1,0 +1,20 @@
+{
+    "clinic-admin": "Clinic Admin",
+    "choose-module": "Please choose a module to begin",
+    "select-language": "Select Language",
+    "menu": {
+        "appointments": "Appointment Desk",
+        "appointments_note": "Appointment Desk module includes appointment management and appointment records.",
+        "home": "Home"
+    },
+    "daily-appointment-records": {
+        "header": "Daily Appointments",
+        "sub-header": "View and manage appointments",
+        "add-new-appointment": "Add New Appointment",
+        "date-time-slot": "Date & Time Slot",
+        "patient-name": "Patient Name"
+    },
+    "general": {
+        "nric_no_passport": "NRIC/Passport"
+    }
+}
