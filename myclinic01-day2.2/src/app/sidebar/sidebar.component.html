@@ -1,0 +1,18 @@
+<section class="sidebar" [ngClass]="hideSidebar ? 'collapsed' : ''">
+    <button class="toggle-btn" (click)="toggle()">
+        <span class="toggle-icon"></span>
+    </button>
+    <nav class="menu">
+        <ul>
+            <li class="menu-item">
+                <div class="custom-tooltip" *ngIf="hideSidebar">
+                    <span>{{'menu.home' | translate}}</span>
+                </div>
+                <a (click)="goToHome()">
+                    <i class="fa-solid fa-house"></i>
+                    <span>{{'menu.home' | translate}}</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>
