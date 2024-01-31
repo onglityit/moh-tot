@@ -1,0 +1,20 @@
+{
+    "clinic-admin": "Pentadbir Klinik",
+    "choose-module": "Untuk permulaan, sila pilih modul",
+    "select-language": "Pilih Bahasa",
+    "menu": {
+        "appointments": "Meja Janji Temu",
+        "appointments_note": "Modul Meja Janji Temu merangkumi pengurusan janji temu dan rekod janji temu.",
+        "home": "Halaman Utama"
+    },
+    "daily-appointment-records": {
+        "header": "Janji Temu Harian",
+        "sub-header": "Lihat dan urus janji temu",
+        "add-new-appointment": "Tambah Janji Temu Baru",
+        "date-time-slot": "Slot Tarikh & Masa",
+        "patient-name": "Nama Pesakit"
+    },
+    "general": {
+        "nric_no_passport": "Nombor KP/Passport"
+    }
+}

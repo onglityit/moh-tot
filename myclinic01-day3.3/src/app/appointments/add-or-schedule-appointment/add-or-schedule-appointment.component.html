@@ -1,0 +1,29 @@
+<div class="modal-fullscreen modal-dialog" role="document">
+    <input [readonly]="true" style="color: gray;" matInput [matDatepicker]="picker" placeholder="Choose a date"
+    (dateChange)="onDateSelected($event)">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <p>Appointment Date: {{ formattedDate }}</p>
+    <div><br>
+        <label>Hours : Minute</label>&nbsp;
+        <input type="text" [(ngModel)]="selectedTime">
+    </div>
+    <div><br>
+        <label>{{ 'daily-appointment-records.patient-name' | translate }}</label>&nbsp;
+        <input type="text" [(ngModel)]="patientName" (input)="convertPatientToUppercase(patientName)">
+    </div>
+    <div><br>
+        <label>{{ 'general.nric_no_passport' | translate }}</label>&nbsp;
+        <input type="text" [(ngModel)]="nricPassport" (input)="convertICPassportToUppercase(nricPassport)">
+    </div>
+    <div><br>
+        <ng-container *ngIf="!currentRecordId">
+            <button (click)="addAndClose()">Add and Close</button>&nbsp;
+            <button (click)="addAnother()">Save, Add Another</button>
+        </ng-container>
+        <ng-container *ngIf="currentRecordId">
+            <button (click)="updateAndClose()">Update and Close</button>&nbsp;
+            <button (click)="updateOnly()">Update Only</button>
+        </ng-container>
+    </div>
+</div>

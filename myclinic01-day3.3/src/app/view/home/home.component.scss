@@ -1,0 +1,68 @@
+.clinic-admin{
+    background-color: black;
+    color: white;
+    height: 25px;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-radius: 15px;
+}
+.default-font{
+    font-family: Nunito Sans,sans-serif;
+    font-size: 14px;
+}
+
+.homeCard {
+	border: solid 1px #F2F2F2;
+	padding: 8px;
+	border-radius: 16px;
+	margin-top: 26px;
+	height: calc(100% - 26px);
+}
+
+.homeCard .homeCard-body {
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	// justify-content: space-between;
+	background: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#f0f0f0));
+	background: linear-gradient(180deg, whitesmoke 0%, #f0f0f0 100%);
+	padding: 16px;
+	border-radius: 16px;
+	gap: 12px;
+	-webkit-box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+	box-shadow: -10px 10px 20px 0px rgba(0, 0, 0, 0.6);
+
+	&:hover {
+		-webkit-box-shadow: -10px 10px 20px -12px rgba(0, 0, 0, 0.6);
+		-moz-box-shadow: -10px 10px 20px -12px rgba(0, 0, 0, 0.6);
+		box-shadow: -10px 10px 20px -12px rgba(0, 0, 0, 0.6);
+	}
+}
+
+.homeCard .homeCard-body img {
+	width: 60px;
+	height: 60px;
+	margin-right: 16px;
+}
+
+.homeCard .homeCard-body h5 {
+	margin-bottom: 6px !important;
+}
+
+.cursor-pointer {
+	cursor: pointer;
+}

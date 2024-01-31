@@ -1,0 +1,58 @@
+<div class="top-right">
+    <app-user-menu></app-user-menu>
+</div>
+<p></p>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div class="clinic-admin" fxFlex="nogrow" fxFlex.gt-sm="15" fxLayoutAlign="center center">
+        {{'clinic-admin' | translate}}
+    </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="nogrow" fxFlex.gt-sm="35" fxLayoutAlign="center center">
+        <p class="default-font">{{'choose-module' | translate}}</p>
+    </div>
+</div>
+<div fxLayout="row">
+    <div  fxFlex.gt-sm="50" fxLayoutAlign="center start" class="homeCard cursor-pointer">
+        <a (click)="goToAppointmentRecords()" class="resetLink">
+            <div class="homeCard-body">
+                <img src="https://mysjdev.entomo.co/myvas-ui/assets/img/appointments.svg">
+                <div>
+                    <h5>{{ 'menu.appointments' | translate }}</h5>
+                    <p>{{ 'menu.appointments_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div  fxFlex.gt-sm="50" fxLayoutAlign="center start" class="homeCard cursor-pointer">
+        <a (click)="goToPatients()" class="resetLink">
+            <div class="homeCard-body">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/78/80/patient-icon-simple-element-from-medical-services-vector-36147880.jpg">
+                <div>
+                    <h5>{{ 'menu.patients' | translate }}</h5>
+                    <p>{{ 'menu.patients_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div fxLayout="row">
+    <button (click)="goToLineChart()">Line Chart</button>
+</div>
+
+<div fxLayout="row">
+    <button (click)="goToGraphChart()">Graph Chart</button>
+</div>
+
+<div fxLayout="row">
+    <button (click)="goToPieChart()">Pie Chart</button>
+</div>
+
+<div fxLayout="row">
+    <button (click)="goToMalaysia()">Malaysia</button>
+</div>
+
+<div fxLayout="row">
+    <button (click)="goToAppointmentGraph()">Appointment Graph</button>
+</div>
