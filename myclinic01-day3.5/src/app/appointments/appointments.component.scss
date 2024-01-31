@@ -1,0 +1,27 @@
+.flex-container {
+	display: inline-flex;
+	width: 100vw;
+	position: relative;
+	gap: 10px;
+	.container-sidebar {
+		flex-basis: 320px;
+		flex-shrink: 0;
+		position: relative;
+		z-index: 1;
+		&.collapsed {
+			flex-basis: 64px;
+		}
+	}
+	.maincolumn {
+		flex-grow: 1;
+		height: calc(100vh - 1rem);
+		overflow-x: auto;
+		margin: 1rem .5rem .5rem .5rem;
+	}
+	.maincolumn p.note {
+		margin-top: 35%;
+		font-size: 1.2rem;
+		color: #999;
+		text-align: center;
+	}
+}

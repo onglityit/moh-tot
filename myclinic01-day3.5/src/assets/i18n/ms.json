@@ -1,0 +1,32 @@
+{
+    "clinic-admin": "Pentadbir Klinik",
+    "choose-module": "Untuk permulaan, sila pilih modul",
+    "select-language": "Pilih Bahasa",
+    "menu": {
+        "appointments": "Meja Janji Temu",
+        "appointments_note": "Modul Meja Janji Temu merangkumi pengurusan janji temu dan rekod janji temu.",
+        "home": "Halaman Utama",
+        "patients": "Pesakit",
+        "patients_note": "Pesakit module include pesakit information, and any other history records.",
+        "line-chart": "Peta Garis",
+        "line-chart_note": "Peta Garis untuk bayangan Horizontal statistik",
+        "graph": "Graph",
+        "graph_note": "Graph for Horizontal statistical representation",
+        "apt-graph": "Appointment Graph",
+        "apt-graph_note": "Appointment Graph for Horizontal statistical representation",
+        "pie-chart": "Pie chart",
+        "pie-chart_note": "Pie chart for Horizontal statistical representation",
+        "malaysia": "Malaysia map",
+        "malaysia_note": "Malaysia chart for Horizontal statistical representation"
+    },
+    "daily-appointment-records": {
+        "header": "Janji Temu Harian",
+        "sub-header": "Lihat dan urus janji temu",
+        "add-new-appointment": "Tambah Janji Temu Baru",
+        "date-time-slot": "Slot Tarikh & Masa",
+        "patient-name": "Nama Pesakit"
+    },
+    "general": {
+        "nric_no_passport": "Nombor KP/Passport"
+    }
+}

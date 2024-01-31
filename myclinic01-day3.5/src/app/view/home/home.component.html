@@ -1,0 +1,101 @@
+<div class="top-right">
+    <app-user-menu></app-user-menu>
+</div>
+<p></p>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div class="clinic-admin" fxFlex="nogrow" fxFlex.gt-sm="15" fxLayoutAlign="center center">
+        {{'clinic-admin' | translate}}
+    </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="nogrow" fxFlex.gt-sm="35" fxLayoutAlign="center center">
+        <p class="default-font">{{'choose-module' | translate}}</p>
+    </div>
+</div>
+<div fxLayout="row">
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToAppointmentRecords()" class="resetLink">
+            <div class="homeCard-body" style="width: 42vw;">
+                <img src="https://mysjdev.entomo.co/myvas-ui/assets/img/appointments.svg">
+                <div>
+                    <h5>{{ 'menu.appointments' | translate }}</h5>
+                    <p>{{ 'menu.appointments_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToPatients()" class="resetLink">
+            <div class="homeCard-body" style="width: 46vw;">
+                <img src="https://cdn1.vectorstock.com/i/1000x1000/78/80/patient-icon-simple-element-from-medical-services-vector-36147880.jpg">
+                <div>
+                    <h5>{{ 'menu.patients' | translate }}</h5>
+                    <p>{{ 'menu.patients_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div fxLayout="row">
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToLineChart()" class="resetLink">
+            <div class="homeCard-body" style="width: 42vw;">
+                <img src="https://as1.ftcdn.net/v2/jpg/02/23/29/16/1000_F_223291649_eXbiaxovmk9NViFS3iVpt05kvQe2C9Ag.jpg">
+                <div>
+                    <h5>{{ 'menu.line-chart' | translate }}</h5>
+                    <p>{{ 'menu.line-chart_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToGraphChart()" class="resetLink">
+            <div class="homeCard-body" style="width: 46vw;">
+                <img src="https://cdn2.vectorstock.com/i/1000x1000/74/36/growth-trend-chart-flat-icon-vector-10047436.jpg">
+                <div>
+                    <h5>{{ 'menu.graph' | translate }}</h5>
+                    <p>{{ 'menu.graph_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div fxLayout="row">
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToPieChart()" class="resetLink">
+            <div class="homeCard-body" style="width: 42vw;">
+                <img src="https://static.vecteezy.com/system/resources/previews/021/348/775/large_2x/pie-chart-icon-for-your-website-design-logo-app-ui-free-vector.jpg">
+                <div>
+                    <h5>{{ 'menu.pie-chart' | translate }}</h5>
+                    <p>{{ 'menu.pie-chart_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToMalaysia()" class="resetLink">
+            <div class="homeCard-body" style="width: 46vw;">
+                <img src="https://media.istockphoto.com/id/1032082342/vector/malaysia-round-flag-vector-flat-icon.jpg?s=612x612&w=0&k=20&c=BUaqsQxZiNFjFwCq8hnYstdWTEku2gVITTa-tudNekc=">
+                <div>
+                    <h5>{{ 'menu.malaysia' | translate }}</h5>
+                    <p>{{ 'menu.malaysia_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div fxLayout="row">
+    <div  fxFlex.gt-sm="46" fxLayoutAlign="start center" class="homeCard cursor-pointer">
+        <a (click)="goToAppointmentGraph()" class="resetLink">
+            <div class="homeCard-body" style="width: 42vw;">
+                <img src="https://cdn5.vectorstock.com/i/1000x1000/13/24/histogram-line-icon-concept-flat-vector-24751324.jpg">
+                <div>
+                    <h5>{{ 'menu.apt-graph' | translate }}</h5>
+                    <p>{{ 'menu.apt-graph_note' | translate }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
