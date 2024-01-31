@@ -1,0 +1,13 @@
+<div class="usermenu">    
+    <i class="fa-solid fa-address-card"></i>
+    <div class="user-dropdown">
+        <span style="font-size: 16px;">{{'select-language' | translate}}</span>
+        <label class="toggle">
+            <input type="checkbox" id="togBtn" [checked]="selectedLanguage == 'ms'"
+                (change)="setLanguage(selectedLanguage == 'ms'? 'en':'ms')">
+            <span class="switch"></span>
+            <span class="label-en">EN</span>
+            <span class="label-bm">BM</span>
+        </label>
+    </div>
+</div>

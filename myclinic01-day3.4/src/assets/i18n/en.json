@@ -1,0 +1,33 @@
+{
+    "clinic-admin": "Clinic Admin",
+    "choose-module": "Please choose a module to begin",
+    "select-language": "Select Language",
+    "menu": {
+        "appointments": "Appointment Desk",
+        "appointments_note": "Appointment Desk module includes add appointment and records.",
+        "home": "Home",
+        "patients": "Patients",
+        "patients_note": "Patients module include patient information, and any other history records.",
+        "line-chart": "Line chart",
+        "line-chart_note": "Line chart for Horizontal statistical representation",
+        "graph": "Graph",
+        "graph_note": "Graph for Horizontal statistical representation",
+        "apt-graph": "Appointment Graph",
+        "apt-graph_note": "Appointment Graph for Horizontal statistical representation",
+        "pie-chart": "Pie chart",
+        "pie-chart_note": "Pie chart for Horizontal statistical representation",
+        "malaysia": "Malaysia map",
+        "malaysia_note": "Malaysia chart for Horizontal statistical representation"
+
+    },
+    "daily-appointment-records": {
+        "header": "Daily Appointments",
+        "sub-header": "View and manage appointments",
+        "add-new-appointment": "Add New Appointment",
+        "date-time-slot": "Date & Time Slot",
+        "patient-name": "Patient Name"
+    },
+    "general": {
+        "nric_no_passport": "NRIC/Passport"
+    }
+}
