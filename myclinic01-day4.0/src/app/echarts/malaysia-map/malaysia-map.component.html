@@ -1,0 +1,15 @@
+<p>malaysia-map works!</p>
+Current Zoom: <input [(ngModel)]="currentZoom"><br>
+Current Lat: <input [(ngModel)]="currentLat"><br>
+Current Lng: <input [(ngModel)]="currentLng"><br>
+states:<br>
+<ng-container *ngFor="let state of statesZoomAndLatLng" >
+  <button (click)="goToState(state.state)">
+    {{ state.state }}
+  </button><br>
+</ng-container>
+<div class="map-container">
+    <div class="map-frame">
+      <div id="map"></div>
+    </div>
+</div>

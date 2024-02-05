@@ -1,0 +1,47 @@
+<div fxLayout="row" >
+    <div>
+        <h3>{{ 'daily-appointment-records.header' | translate }}</h3>
+        <p><small>{{ 'daily-appointment-records.sub-header' | translate }}</small></p>
+    </div>
+</div>
+<div fxLayout="row" fxLayoutAlign="space-between">
+    <div fxFlex="nogrow" fxFlex.gt-sm="35"></div>
+    <div fxFlex="nogrow">
+        <button type="button" (click)="goToAddOrScheduleAppointment()" class="test-login">{{
+            'daily-appointment-records.add-new-appointment' | translate}}</button>
+
+    </div>
+</div>
+
+<div fxLayout="row"><br></div>
+
+<div fxLayout="row">
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>{{ 'daily-appointment-records.date-time-slot' | translate }} </th>
+            <th>
+                {{ 'daily-appointment-records.patient-name' | translate }}
+            </th>
+            <th>{{ 'general.nric_no_passport' | translate }}</th>
+        </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let appt of appointmentList">
+                <tr class="spacing-row">
+                    <td>
+                        {{appt.dateTimeSlot}}
+                    </td>
+                    <td>
+                        <a style="color: rgb(0, 166, 255); cursor: pointer;" (click)="redirectToAddAppointment(appt.appointmentId)">
+                            {{appt.patientName}}
+                        </a>
+                    </td>
+                    <td>
+                        {{appt.patientNric}}
+                    </td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>
