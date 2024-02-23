@@ -32,4 +32,20 @@ public class HelloControllerSolution {
 //            }
 //        }
 //    }
+
+    @GetMapping("/hellonode-solution")
+    public String hellonode() throws IOException {
+        OkHttpClient client = new OkHttpClient().newBuilder().build();
+        Request request = new Request.Builder()
+                .url("http://localhost:3001/helloworld")
+                .method("GET", null)
+                .build();
+        try (Response response = client.newCall(request).execute()) {
+            if (response.isSuccessful()) {
+                return response.body().string();
+            } else {
+                return "Error: " + response.code();
+            }
+        }
+    }
 }

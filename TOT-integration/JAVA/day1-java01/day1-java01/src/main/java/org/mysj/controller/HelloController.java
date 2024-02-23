@@ -13,4 +13,6 @@ public class HelloController {
     public String hello2() {
         return "ready to implement...";
     }
+    @GetMapping("/hellonode")
+    public String hellonode() {return "ready to be lingua franca of programming...";}
 }
