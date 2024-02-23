@@ -1,0 +1,5 @@
+server:
+  servlet:
+    context-path: /day1-java02
+  port:
+    8082
